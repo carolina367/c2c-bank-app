@@ -10,9 +10,13 @@ login_types = ["admin", "user", "guest"]
 def gatekeeper(login):
   if login == "admin":
     return "You have the privileges"
+  elif login== "user":
+    return "You have limited privileges."
+  elif login== "guest":
+    return "You have no privileges."
 
-# 3. Call the gatekeeper function with a string and print what it returns.
-print(gatekeeper("admin"))
+# 3. Call the gatekeeper function with a string and print what it returns. this is like naming the variable
+print(gatekeeper("user"))
 
 # 4. How could this code be improved? Make it better. Think about what other scenarios you should cover in your if logic.
 
